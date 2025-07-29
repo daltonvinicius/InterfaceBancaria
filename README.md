@@ -24,8 +24,3 @@ Foi desenvolvido como exercício de prática com estruturas básicas de programa
 
 ---
 
-## ▶️ Como rodar o projeto
-
-1. Certifique-se de que o Java está instalado:
-   ```bash
-   java -version
