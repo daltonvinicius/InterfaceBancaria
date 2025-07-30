@@ -19,7 +19,7 @@ Foi desenvolvido como exercício de prática com estruturas básicas de programa
 ## 💻 Tecnologias usadas
 
 - Java (JDK 17+)
-- IDE: IntelliJ IDEA (ou qualquer outra)
+- IDE: IntelliJ IDEA
 - Execução via terminal (console)
 
 ---
