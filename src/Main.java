@@ -7,7 +7,8 @@ public class Main {
         int escolha = 0;
         int senha = 1234;
         double saldo = 1000;
-        String nome = "Dalton Vinicius";
+        String tipoConta = "Corrente";
+        String nome = "Peter Parker";
         String primeiroNome = nome.split(" ")[0];
         String saldoEmTexto = String.valueOf(saldo);
         String saldoMascarado = "*".repeat(saldoEmTexto.length());
@@ -16,7 +17,7 @@ public class Main {
                 Dados Iniciais do cliente:
                 
                 Nome:                %s
-                Tipo de conta:       Corrente
+                Tipo de conta:       %s
                 Saldo:               R$%.2f
                 ************************************************************
                 Operações
@@ -33,8 +34,8 @@ public class Main {
         System.out.println("*".repeat(60));
         System.out.println("Dados Iniciais do cliente:");
         System.out.println();
-        System.out.printf("%-20s %s\n", "Nome:", "Dalton Vinicius");
-        System.out.printf("%-20s %s\n", "Tipo de conta:", "Corrente");
+        System.out.printf("%-20s %s\n", "Nome:", nome);
+        System.out.printf("%-20s %s\n", "Tipo de conta:", tipoConta);
         System.out.printf("%-20s R$ %s\n", "Saldo:", saldoMascarado);
         System.out.println("*".repeat(60));
         System.out.println("Para acessar a conta digite a senha de 4 digitos");
@@ -68,7 +69,7 @@ public class Main {
             }
             */
 
-            System.out.printf(interfaceBanco, nome, saldo);
+            System.out.printf(interfaceBanco, nome, tipoConta,saldo);
             escolha = scanner.nextInt();
 
             if (escolha < 1 || escolha > 4) {
